@@ -28,6 +28,26 @@ const Task = styled.p`
     align-self: flex-start;
 `;
 
+const Сorrect = styled.p`
+    color: #20c728;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 3vh;
+    margin-top: 10px;
+    font-weight: 800;
+    align-self: flex-start;
+    width: 100%; /* Добавлено */
+`;
+
+const Mistake = styled.p`
+    color: #d83737;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 3vh;
+    margin-top: 10px;
+    font-weight: 800;
+    align-self: flex-start;
+    width: 100%; /* Добавлено */
+`;
+
 const Need = styled.p`
     color: transparent;
     font-size: 3vh;
@@ -78,6 +98,11 @@ export const FirstPage = () => {
             <Task>Когда я тебе впервые написал?</Task>
             <Paragraph>Формат ответа ДД-ММ. Например 21 Ноября это 21-11</Paragraph>
             <InputBox inputType="text" placeholder="Твой ответ" value={answer} onChange={(value) => { checkAnswer(value); }} />
+            {answered? (
+                <Сorrect>Умничка! Можешь открывать подарок #48. И переходи на следующую страничку</Сorrect>
+            ) : (
+                <Mistake>Еще не правильно...</Mistake>
+            )}
             <Button onClick={nextTask} size="large" time={answered}>Дальше?</Button>
             <Need>Загадка #1</Need>
         </StyledPage>       

@@ -10,7 +10,8 @@ export const MainPage = () => {
 
     useEffect(() => {
         const t = localStorage.getItem('authToken')
-        if (t === '') {
+        console.log(t);
+        if (t === null) {
             navigate('/login');
         }
         else {
@@ -19,7 +20,7 @@ export const MainPage = () => {
                 navigate(`/app/${step}`);
             }
             const today = new Date();
-            setOnTime(today.getDate() >= 21 && today.getMonth() >= 10);
+            setOnTime(today.getDate() >= 28 && today.getMonth() >= 11);
         }
     });
 

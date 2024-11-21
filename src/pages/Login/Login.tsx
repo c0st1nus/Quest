@@ -47,7 +47,7 @@ export const Login = () => {
           <InputBox inputType="text" placeholder="Логин" value={login} onChange={setLogin} />
           <InputBox inputType="password" placeholder="Пароль" value={password} onChange={setPassword} />
           <p id="alarm_p">{alarm}</p>
-          <Button onClick={ClickHandle} size='medium'>Login</Button>
+          <Button onClick={ClickHandle} size='medium' time={true}>Login</Button>
         </div>
     </div>
     )
