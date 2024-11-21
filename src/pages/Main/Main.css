@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 4vh;
+}
+
+#login_form {
+    background-color: #1B263B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.title {
+    color: #62BEC1;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 4vh;
+}
+
+.paragraph {
+    color: #62BEC1;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2vh;
+    margin-top: 10px;
+}
+.paragraph-status {
+    color: #c92525;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2vh;
+    margin-top: 10px;
+}
