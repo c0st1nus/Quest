@@ -4,6 +4,7 @@
     align-items: center;
     width: fit-content;
     margin: 0 auto;
+    max-width: ;
 }
 
 .loading-spinner {
@@ -19,7 +20,7 @@
     color: #62BEC1;
     font-family: 'JetBrains Mono', monospace;
     letter-spacing: 0.2em;
-    font-size: 3em;
+    font-size: 6vw;
     font-weight: 300;
     margin-bottom: 1em;
     text-align: center;
